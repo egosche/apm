@@ -2,47 +2,44 @@
 <p align="center">
     <img
       alt="APM"
-      src="https://github.com/EGoesche/apm/blob/master/Resources/apm.png"
+      src="https://github.com/erikgoesche/apm/blob/main/Resources/apm.png"
       width="300"
     />
 </p>
 
 # APM - Air Passenger Manager
-Der Air Passenger Manager (APM) ist eine Verwaltungssoftware, welche es Mitarbeiter
-einer Fluggesellschaft ermöglichen soll, Passagiere eines Flugzeuges digital abzubilden. So soll das Programm alle relevanten Eckdaten der Fluggäste aufnehmen, verarbeiten und bei Bedarf auch wieder ausgeben können. Die Mitarbeiter sind so unter
-anderem in der Lage, Passagiere einzuchecken, sie einem Flug zuzuordnen, den aktuellen Status eines Passagiers abzufragen und falls nötig auch wieder aus einer Fluglinie
-zu entfernen.
-Hinweis: Dieses Projekt ist im Rahmen einer Belegarbeit entstanden. Hauptaugenmerk lag bei der Konzeption dieser Software. Die Implementation erfolgte nur zu einem kleinen Teil und ist nun hier öffentlich einsehbar. Diese Tatsache begründet das Fehlen vieler Funktionen.
+The Air Passenger Manager (APM) is a management software that enables airline employees to digitally map passengers on an aircraft. The program is supposed to be able to record and process all relevant key data of the passengers and to output them again if required. Among other things, employees will be able to check in passengers, assign them to a flight, query the current status of a passenger and, if necessary, remove them from an airline. again, if necessary.
+Note: This project was developed as part of a seminar project. The main focus was on the conception of this software. The implementation was done only to a small part and is now publicly available here. This fact explains the lack of many functions.
 
-Übersicht
+Overview
 ---------------------
  * Installation
- * Funktionen
- * Autoren
+ * Functions
+ * Authors
  
  Installation
 ------------
-Inhalt folgt...
+TBD
 
- Funktionen
+ Functions
 ------------
-Die folgenden Funktionen wurden in der konzeptionellen Phase erarbeitet, jedoch nicht vollständig implementiert.
-* Verwaltung von Kunden bzw. Passagieren:
- >* Kunden hinzufügen
- >* Kunden bearbeiten
- >* Kunden entfernen
- >* Passagierdaten abrufen
-* Passagiere administrieren:
- >* Passagiere (um-)buchen
- >* Passagiere einen Flug stornieren
-* Check-In:
- >* automatischer Check-In per Barcode
- >* manueller Check-In
-* Benutzerverwaltung
-* Sprachauswahl
+The following functions were developed in the conceptual phase, but not fully implemented.
+* Management of customers or passengers:
+ >* Add customers
+ >* edit customers
+ >* remove customers
+ >* retrieve passenger data
+* Administer passengers:
+ >* (re)book passengers
+ >* cancel passengers a flight
+* Check-in:
+ >* automatic check-in via barcode
+ >* manual check-in
+* user administration
+* language selection
 
- Autoren
+ Authors
 ------------
-* **Erik** - *Developer* - [EGoesche](https://github.com/EGoesche)
+* **Erik** - *Developer* - [ErikGoesche](https://github.com/erikgoesche)
 
-Um zu erfahren, wer zusätzlich an diesem Projekt gearbeitet hat, lesen Sie bitte die contributors-Datei.
+To learn who additionally worked on this project, please read the contributors file.
