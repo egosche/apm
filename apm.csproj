@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6040DBB1-7AD8-43FE-BF64-EBDAD45C77BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>apm</RootNamespace>
+    <AssemblyName>apm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\egoes\Desktop\SWT Abgabe\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\plane.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>020AB03197C62F035F89248EF196BDEDA5842445</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>apm_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.14.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Flug.cs" />
+    <Compile Include="Fluggesellschaft.cs" />
+    <Compile Include="Flugzeug.cs" />
+    <Compile Include="Forms\KundenAnzeigen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KundenAnzeigen.Designer.cs">
+      <DependentUpon>KundenAnzeigen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KundenBearbeiten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KundenBearbeiten.Designer.cs">
+      <DependentUpon>KundenBearbeiten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KundenEntfernen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KundenEntfernen.Designer.cs">
+      <DependentUpon>KundenEntfernen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KundenHinzufuegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KundenHinzufuegen.Designer.cs">
+      <DependentUpon>KundenHinzufuegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KundenSuchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KundenSuchen.Designer.cs">
+      <DependentUpon>KundenSuchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Umbuchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Umbuchen.Designer.cs">
+      <DependentUpon>Umbuchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SitznummerSite.cs" />
+    <Compile Include="Sitzplatz.cs" />
+    <Compile Include="Forms\Startfenster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Startfenster.Designer.cs">
+      <DependentUpon>Startfenster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KundennummerSite.cs" />
+    <Compile Include="Kunde.cs" />
+    <Compile Include="Kundenstamm.cs" />
+    <Compile Include="Passagierflugzeug.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\KundenAnzeigen.resx">
+      <DependentUpon>KundenAnzeigen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KundenBearbeiten.resx">
+      <DependentUpon>KundenBearbeiten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KundenEntfernen.resx">
+      <DependentUpon>KundenEntfernen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KundenHinzufuegen.resx">
+      <DependentUpon>KundenHinzufuegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KundenSuchen.resx">
+      <DependentUpon>KundenSuchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Umbuchen.resx">
+      <DependentUpon>Umbuchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\Startfenster.resx">
+      <DependentUpon>Startfenster.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="apm_1_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\plane.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

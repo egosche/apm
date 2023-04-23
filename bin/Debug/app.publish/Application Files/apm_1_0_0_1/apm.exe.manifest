@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="apm.exe" version="1.0.0.1" publicKeyToken="028c2263490023c4" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\plane.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="apm" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="apm.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC-Manifestoptionen
+             Wenn Sie die Ebene der Benutzerkontensteuerung für Windows ändern möchten, ersetzen Sie den 
+             Knoten "requestedExecutionLevel" wie folgt.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Durch Angabe des Elements "requestedExecutionLevel" wird die Datei- und Registrierungsvirtualisierung deaktiviert. 
+            Entfernen Sie dieses Element, wenn diese Virtualisierung aus Gründen der Abwärtskompatibilität
+            für die Anwendung erforderlich ist.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="apm.exe" size="306096">
+      <assemblyIdentity name="apm" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9S5hcXrRexKM2pnw31o+mt4brD+8UbjRNWqq1D3B+BU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FontAwesome.Sharp.dll" size="455168">
+      <assemblyIdentity name="FontAwesome.Sharp" version="5.14.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>JvxYS9sj6Up2gQVWXXUGXjCyfUTxctWXFznI56RJ4tQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="apm.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\plane.ico" size="100880">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Gt61zZDLnB6iVsoNGySSkNbzmzMkQo+YpMVPfCoCTAs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Eine Liste der Windows-Versionen, unter denen diese Anwendung getestet
+           und für die sie entwickelt wurde. Wenn Sie die Auskommentierung der entsprechenden Elemente aufheben,
+           wird von Windows automatisch die kompatibelste Umgebung ausgewählt. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=AURELIA\egoes" issuerKeyHash="9ed861003638d2365d6f6f81539bfc6fa7a7b003" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>aTiJYpviXXco1vLvunLT38+HmaXVeFITKEQjaaRgeXY=</DigestValue></Reference></SignedInfo><SignatureValue>QBJjxpsMf6DDfRhG0CIEZwbruZ/r7VxDkeaGR3HrqkR/tIGM5ceSQDKpv8NFt3DF4mv2gYBmQC//tD2fz8ew5IosEj/gpCBoZJOsZYhu0/dJISxnW5BDHZ8q70kXRJzGInRPGOxnwGVc141LQ9w+ALa9Ya2oU4VyyDD61GrdcRQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sdH+kSD8st8s86RWM6iOoZzsp/qyv5d6x4pIE4J/lrNaTd/ABPu1B4uuh/RhV1vpqWyDUtBj/Ja6fPAuxPj26hNM4FbZgwY5ooDd9tSkFQFXM9UISvV3pbZA/sXZnVy6qkZSovYqVqECKA5wkjvUZCIhIz527Xu0LN35FHtKmok=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="767960a469234428135278d5a59987cfdfd372baeff2d628775de29b62893869" Description="" Url=""><as:assemblyIdentity name="apm.exe" version="1.0.0.1" publicKeyToken="028c2263490023c4" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=AURELIA\egoes</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>LHVciCt7N7cZ7+lHIpgaiSEyHs0DUs/um5cjLo/rtu0=</DigestValue></Reference></SignedInfo><SignatureValue>LkPPFH5ZNBm6E6buDyXQtDbZWKA2ByLpSNUdJrZZo2S2Vdtd9rXBztOSOOMRXqAdkcl1GXIyb4V9pNlec0nXFOFHyEAj82jcxacyz8MSYAeOu3FwymweVNFMW2J03CcnzRNRcBmxvVvNGjcPEGstWr/m4ufoMGn5E53vF/d8y6Q=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sdH+kSD8st8s86RWM6iOoZzsp/qyv5d6x4pIE4J/lrNaTd/ABPu1B4uuh/RhV1vpqWyDUtBj/Ja6fPAuxPj26hNM4FbZgwY5ooDd9tSkFQFXM9UISvV3pbZA/sXZnVy6qkZSovYqVqECKA5wkjvUZCIhIz527Xu0LN35FHtKmok=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBzTCCATagAwIBAgIQbqHbM+ZZI7hGRX8P2RavyjANBgkqhkiG9w0BAQsFADAlMSMwIQYDVQQDHhoAQQBVAFIARQBMAEkAQQBcAGUAZwBvAGUAczAeFw0yMDA4MzAwODE2MjlaFw0yMTA4MzAxNDE2MjlaMCUxIzAhBgNVBAMeGgBBAFUAUgBFAEwASQBBAFwAZQBnAG8AZQBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCx0f6RIPyy3yzzpFYzqI6hnOyn+rK/l3rHikgTgn+Ws1pN38AE+7UHi66H9GFXW+mpbINS0GP8lrp88C7E+PbqE0zgVtmDBjmigN321KQVAVcz1QhK9XeltkD+xdmdXLqqRlKi9ipWoQIoDnCSO9RkIiEjPnbte7Qs3fkUe0qaiQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAKSmf0Xg02gRVLdAbrEfl98njCKnRQh24JrCuBI2P/8GsRqok3s8U6KmMyofg4pq8cILzNq8S01t9USFho971TSChwhvjDb4KtTSHSxfHPKACvBy+xGqvbcpubIvH8659mtPb+EuUuBt64Po3gfufwEGRjs2kcoE/ZKtT+N2Uvdd</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
